@@ -12,7 +12,6 @@ db.produtos.updateMany(
 );
 
 // Crie uma query que incremente as vendas de Big Mac às quartas-feiras em 60.
-use("commerce");
 db.produtos.updateOne(
   { nome: "Big Mac" },
   {
@@ -21,7 +20,6 @@ db.produtos.updateOne(
 );
 
 // Crie uma query que incremente as vendas de todos os sanduíches de carne do tipo bovino e pão aos sábados em 120.
-use("commerce");
 db.produtos.updateMany(
   { 
     tags: {
@@ -34,7 +32,6 @@ db.produtos.updateMany(
 );
 
 // Crie uma query que retorne o nome e vendasPorDia de todos os documentos.
-use("commerce");
 db.produtos.find(
   {},
   {
