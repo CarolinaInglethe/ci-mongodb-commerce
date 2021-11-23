@@ -19,7 +19,6 @@ db.produtos.updateMany(
  );
 
 //  Crie uma query que retorne o nome e tags de todos os documentos.
-use("commerce");
 db.produtos.find(
   {},
   {
