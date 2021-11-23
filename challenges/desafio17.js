@@ -5,11 +5,8 @@ db.produtos.createIndex(
   );
 
 // Crie uma query que retorne a quantidade de documentos que contêm as palavras frango ou hamburguer utilizando o operador $text.
-use("commerce");
 db.produtos.count(
-  {
-    $text: {
-      $search: "frango hamburguer",
-    },
+  { 
+    $text: { $search: "frango hamburguer" },
   },
 );
